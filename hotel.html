@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فندق هلتون إب السياحي | HILTON IBB HOTEL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* إصلاح السلاسة في الانتقال */
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        box-sizing: border-box;
+      }
+      * {
+        font-family: "Tajawal", sans-serif;
+      }
+      .font-display {
+        font-family: "Playfair Display", serif;
+      }
+
+      .gradient-gold {
+        background: linear-gradient(
+          135deg,
+          #d4af37 0%,
+          #f4e4ba 50%,
+          #d4af37 100%
+        );
+      }
+
+      .text-gradient {
+        background: linear-gradient(135deg, #d4af37, #f4e4ba);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* خلفية الهيرو */
+      .hero-bg {
+        background: linear-gradient(
+            135deg,
+            rgba(26, 26, 46, 0.85) 0%,
+            rgba(45, 45, 75, 0.75) 100%
+          ),
+          url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .card-hover {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .card-hover:hover {
+        transform: translateY(-8px);
+      }
+
+      .shimmer {
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(212, 175, 55, 0.3),
+          transparent
+        );
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite;
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .float-animation {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade-in {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+
+      .delay-100 {
+        animation-delay: 0.1s;
+      }
+      .delay-200 {
+        animation-delay: 0.2s;
+      }
+      .delay-300 {
+        animation-delay: 0.3s;
+      }
+      .delay-400 {
+        animation-delay: 0.4s;
+      }
+
+      .nav-blur {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1a2e;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #d4af37, #b8860b);
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body class="h-full bg-[#0f0f1a] text-white overflow-x-hidden">
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 nav-blur bg-[#1a1a2e]/80 border-b border-[#D4AF37]/20 transition-all duration-300"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex items-center gap-3">
+            <div
+              class="w-12 h-12 gradient-gold rounded-full flex items-center justify-center shadow-lg shadow-[#D4AF37]/20"
+            >
+              <svg
+                class="w-7 h-7 text-[#1a1a2e]"
+                fill="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l6.9 3.45L12 11.09 5.1 7.63 12 4.18zM4 8.82l7 3.5v7.36l-7-3.5V8.82zm9 10.86v-7.36l7-3.5v7.36l-7 3.5z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-gradient">فندق هلتون إب</h1>
+              <p class="text-xs text-[#D4AF37]/60 tracking-wider">
+                HILTON IBB HOTEL
+              </p>
+            </div>
+          </div>
+
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="#home"
+              class="text-[#D4AF37] hover:text-[#F4E4BA] transition-colors font-medium"
+              >الرئيسية</a
+            >
+            <a
+              href="#rooms"
+              class="text-gray-300 hover:text-[#D4AF37] transition-colors"
+              >الغرف</a
+            >
+            <a
+              href="#services"
+              class="text-gray-300 hover:text-[#D4AF37] transition-colors"
+              >الخدمات</a
+            >
+            <a
+              href="#gallery"
+              class="text-gray-300 hover:text-[#D4AF37] transition-colors"
+              >المعرض</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-300 hover:text-[#D4AF37] transition-colors"
+              >تواصل معنا</a
+            >
+            <button
+              onclick="document.getElementById('contact').scrollIntoView()"
+              class="gradient-gold text-[#1a1a2e] px-6 py-2.5 rounded-full font-bold hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all transform hover:scale-105"
+            >
+              احجز الآن
+            </button>
+          </div>
+
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-[#D4AF37] p-2 hover:bg-[#D4AF37]/10 rounded-lg transition-colors cursor-pointer"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#1a1a2e]/95 border-t border-[#D4AF37]/20 backdrop-blur-xl absolute w-full left-0 z-40"
+      >
+        <div class="px-4 py-4 space-y-3">
+          <a
+            href="#home"
+            class="block py-2 text-[#D4AF37] hover:bg-[#D4AF37]/10 px-2 rounded"
+            >الرئيسية</a
+          >
+          <a
+            href="#rooms"
+            class="block py-2 text-gray-300 hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 px-2 rounded"
+            >الغرف</a
+          >
+          <a
+            href="#services"
+            class="block py-2 text-gray-300 hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 px-2 rounded"
+            >الخدمات</a
+          >
+          <a
+            href="#gallery"
+            class="block py-2 text-gray-300 hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 px-2 rounded"
+            >المعرض</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 text-gray-300 hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 px-2 rounded"
+            >تواصل معنا</a
+          >
+          <button
+            onclick="document.getElementById('contact').scrollIntoView()"
+            class="w-full gradient-gold text-[#1a1a2e] py-3 rounded-full font-bold mt-4"
+          >
+            احجز الآن
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
+      <div
+        class="absolute top-20 right-10 w-32 h-32 border border-[#D4AF37]/20 rotate-45 float-animation rounded-xl"
+      ></div>
+      <div
+        class="absolute bottom-20 left-10 w-24 h-24 border border-[#D4AF37]/20 rotate-12 float-animation rounded-xl"
+        style="animation-delay: 1s"
+      ></div>
+
+      <div class="relative z-10 text-center px-4 max-w-5xl mx-auto pt-20">
+        <div class="animate-fade-in">
+          <div
+            class="inline-flex items-center gap-2 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full px-6 py-2 mb-8 backdrop-blur-sm"
+          >
+            <span
+              class="w-2 h-2 bg-[#D4AF37] rounded-full animate-pulse"
+            ></span>
+            <span class="text-[#D4AF37] text-sm"
+              >مرحباً بكم في عالم الفخامة</span
+            >
+          </div>
+        </div>
+        <h1 class="animate-fade-in delay-100">
+          <span
+            class="block text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight"
+            >تجربة ضيافة استثنائية</span
+          >
+          <span
+            class="block text-2xl sm:text-3xl md:text-4xl text-gradient font-display"
+            >في قلب مدينة إب الخضراء</span
+          >
+        </h1>
+        <p
+          class="animate-fade-in delay-200 text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mt-8 leading-relaxed shadow-black drop-shadow-md"
+        >
+          استمتع بإقامة لا تُنسى في أرقى فنادق محافظة إب، حيث تلتقي الأصالة
+          اليمنية بالفخامة العصرية
+        </p>
+        <div
+          class="animate-fade-in delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mt-10"
+        >
+          <a
+            href="#rooms"
+            class="group gradient-gold text-[#1a1a2e] px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-[#D4AF37]/40 transition-all flex items-center gap-3"
+          >
+            <span>استكشف غرفنا</span>
+            <svg
+              class="w-5 h-5 group-hover:-translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="animate-fade-in delay-400 grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-16 border-t border-[#D4AF37]/20 backdrop-blur-sm bg-black/20 rounded-2xl p-6"
+        >
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-gradient">50+</div>
+            <div class="text-gray-400 mt-2">غرفة فاخرة</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-gradient">15+</div>
+            <div class="text-gray-400 mt-2">جناح ملكي</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-gradient">4.9</div>
+            <div class="text-gray-400 mt-2">تقييم النزلاء</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-gradient">24/7</div>
+            <div class="text-gray-400 mt-2">خدمة متواصلة</div>
+          </div>
+        </div>
+      </div>
+
+      <a
+        href="#rooms"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer"
+      >
+        <div
+          class="w-6 h-10 border-2 border-[#D4AF37]/50 rounded-full flex items-start justify-center p-2"
+        >
+          <div class="w-1.5 h-3 bg-[#D4AF37] rounded-full animate-pulse"></div>
+        </div>
+      </a>
+    </section>
+
+    <section
+      id="rooms"
+      class="py-24 bg-gradient-to-b from-[#0f0f1a] to-[#1a1a2e] relative"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <span class="text-[#D4AF37] text-sm tracking-widest uppercase"
+            >الإقامة</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
+            غرفنا <span class="text-gradient">وأجنحتنا</span>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            اختر من بين مجموعة متنوعة من الغرف والأجنحة المصممة لتوفير أقصى
+            درجات الراحة والفخامة
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="card-hover group bg-[#1a1a2e] rounded-3xl overflow-hidden border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 shadow-xl"
+          >
+            <div class="h-64 relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80"
+                alt="الغرفة الكلاسيكية"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute top-4 right-4 bg-[#D4AF37] text-[#1a1a2e] px-4 py-1 rounded-full text-sm font-bold shadow-lg"
+              >
+                الأكثر طلباً
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2">الغرفة الكلاسيكية</h3>
+              <p class="text-gray-400 mb-4 text-sm line-clamp-2">
+                غرفة أنيقة بتصميم عصري مع إطلالة رائعة على المدينة، مثالية
+                للمسافرين المنفردين أو الأزواج.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
+                  >سرير مزدوج</span
+                >
+                <span
+                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
+                  >WiFi مجاني</span
+                >
+                <span
+                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
+                  >إفطار</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between border-t border-gray-700 pt-4"
+              >
+                <div>
+                  <span class="text-3xl font-bold text-gradient">$80</span>
+                  <span class="text-gray-400 text-sm"> / الليلة</span>
+                </div>
+                <button
+                  onclick="selectRoom('classic')"
+                  class="gradient-gold text-[#1a1a2e] px-6 py-2.5 rounded-full font-bold hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all text-sm"
+                >
+                  احجز الآن
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-hover group bg-[#1a1a2e] rounded-3xl overflow-hidden border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 shadow-xl"
+          >
+            <div class="h-64 relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80"
+                alt="الغرفة الفاخرة"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2">الغرفة الفاخرة (ديلوكس)</h3>
+              <p class="text-gray-400 mb-4 text-sm line-clamp-2">
+                مساحة أوسع مع منطقة جلوس منفصلة وحمام فاخر مجهز بأحدث التجهيزات
+                لراحتك.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
+                  >سرير كينج</span
+                >
+                <span
+                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
+                  >ميني بار</span
+                >
+                <span
+                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
+                  >جاكوزي</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between border-t border-gray-700 pt-4"
+              >
+                <div>
+                  <span class="text-3xl font-bold text-gradient">$120</span>
+                  <span class="text-gray-400 text-sm"> / الليلة</span>
+                </div>
+                <button
+                  onclick="selectRoom('deluxe')"
+                  class="gradient-gold text-[#1a1a2e] px-6 py-2.5 rounded-full font-bold hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all text-sm"
+                >
+                  احجز الآن
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-hover group bg-[#1a1a2e] rounded-3xl overflow-hidden border border-[#D4AF37]/30 hover:border-[#D4AF37]/60 relative shadow-xl"
+          >
+            <div
+              class="absolute top-0 right-0 left-0 h-1 gradient-gold shimmer z-20"
+            ></div>
+            <div class="h-64 relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80"
+                alt="الجناح الملكي"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute top-4 right-4 bg-gradient-to-r from-[#D4AF37] to-[#F4E4BA] text-[#1a1a2e] px-4 py-1 rounded-full text-sm font-bold shadow-lg"
+              >
+                ⭐ الجناح الملكي
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2">الجناح الملكي</h3>
+              <p class="text-gray-400 mb-4 text-sm line-clamp-2">
+                تجربة ملكية فاخرة مع غرفة نوم وصالة استقبال وشرفة خاصة بإطلالة
+                بانورامية على مدينة إب.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
+                  >غرفتين</span
+                >
+                <span
+                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
+                  >خدمة VIP</span
+                >
+                <span
+                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
+                  >شرفة</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between border-t border-gray-700 pt-4"
+              >
+                <div>
+                  <span class="text-3xl font-bold text-gradient">$200</span>
+                  <span class="text-gray-400 text-sm"> / الليلة</span>
+                </div>
+                <button
+                  onclick="selectRoom('suite')"
+                  class="gradient-gold text-[#1a1a2e] px-6 py-2.5 rounded-full font-bold hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all text-sm"
+                >
+                  احجز الآن
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-24 bg-[#1a1a2e] relative overflow-hidden">
+      <div
+        class="absolute top-0 left-0 w-96 h-96 bg-[#D4AF37]/5 rounded-full blur-3xl"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-96 h-96 bg-[#D4AF37]/5 rounded-full blur-3xl"
+      ></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <span class="text-[#D4AF37] text-sm tracking-widest uppercase"
+            >المرافق</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
+            خدماتنا <span class="text-gradient">المميزة</span>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            نقدم لكم مجموعة متكاملة من الخدمات الراقية لضمان إقامة مثالية
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="card-hover group bg-[#252545]/50 p-8 rounded-2xl border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 text-center hover:bg-[#252545]"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-6 gradient-gold rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-[#D4AF37]/10"
+            >
+              <svg
+                class="w-8 h-8 text-[#1a1a2e]"
+                fill="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">مطعم فاخر</h3>
+            <p class="text-gray-400 text-sm">
+              أشهى المأكولات اليمنية والعالمية
+            </p>
+          </div>
+          <div
+            class="card-hover group bg-[#252545]/50 p-8 rounded-2xl border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 text-center hover:bg-[#252545]"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-6 gradient-gold rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-[#D4AF37]/10"
+            >
+              <svg
+                class="w-8 h-8 text-[#1a1a2e]"
+                fill="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">WiFi فائق السرعة</h3>
+            <p class="text-gray-400 text-sm">
+              إنترنت مجاني في كافة أرجاء الفندق
+            </p>
+          </div>
+          <div
+            class="card-hover group bg-[#252545]/50 p-8 rounded-2xl border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 text-center hover:bg-[#252545]"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-6 gradient-gold rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-[#D4AF37]/10"
+            >
+              <svg
+                class="w-8 h-8 text-[#1a1a2e]"
+                fill="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">مواقف سيارات</h3>
+            <p class="text-gray-400 text-sm">مواقف آمنة ومجانية للنزلاء</p>
+          </div>
+          <div
+            class="card-hover group bg-[#252545]/50 p-8 rounded-2xl border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 text-center hover:bg-[#252545]"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-6 gradient-gold rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-[#D4AF37]/10"
+            >
+              <svg
+                class="w-8 h-8 text-[#1a1a2e]"
+                fill="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">قاعات اجتماعات</h3>
+            <p class="text-gray-400 text-sm">
+              قاعات مجهزة للمؤتمرات والفعاليات
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="gallery"
+      class="py-24 bg-gradient-to-b from-[#1a1a2e] to-[#0f0f1a]"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-[#D4AF37] text-sm tracking-widest uppercase"
+            >جولة مصورة</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
+            معرض <span class="text-gradient">الصور</span>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            اكتشف أجواء الفخامة والراحة من خلال صور فندقنا
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div
+            class="group relative h-48 md:h-64 rounded-2xl overflow-hidden card-hover cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+              alt="واجهة الفندق"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+            >
+              <span class="text-white font-medium">واجهة الفندق</span>
+            </div>
+          </div>
+
+          <div
+            class="group relative h-48 md:h-64 rounded-2xl overflow-hidden card-hover col-span-2 row-span-2 cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80"
+              alt="الجناح الملكي"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+            >
+              <span class="text-white font-medium">الجناح الملكي</span>
+            </div>
+          </div>
+
+          <div
+            class="group relative h-48 md:h-64 rounded-2xl overflow-hidden card-hover cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80"
+              alt="المطعم"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+            >
+              <span class="text-white font-medium">المطعم</span>
+            </div>
+          </div>
+
+          <div
+            class="group relative h-48 md:h-64 rounded-2xl overflow-hidden card-hover cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=800&q=80"
+              alt="الكافيه"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+            >
+              <span class="text-white font-medium">الكافيه</span>
+            </div>
+          </div>
+
+          <div
+            class="group relative h-48 md:h-64 rounded-2xl overflow-hidden card-hover cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=800&q=80"
+              alt="صالة الاستقبال"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+            >
+              <span class="text-white font-medium">صالة الاستقبال</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-gray-400 mb-6">
+            تابعنا على وسائل التواصل لمشاهدة المزيد
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <a
+              href="https://www.facebook.com/Hltonibb"
+              target="_blank"
+              class="group w-14 h-14 bg-gradient-to-br from-[#252545] to-[#1a1a2e] rounded-xl flex items-center justify-center border border-[#D4AF37]/20 hover:border-[#D4AF37] transition-all hover:scale-110"
+            >
+              <svg
+                class="w-6 h-6 text-[#D4AF37]"
+                fill="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/hlton_ibb?igsh=MWtoZmNwaHQOcW5hdw=="
+              target="_blank"
+              class="group w-14 h-14 bg-gradient-to-br from-[#252545] to-[#1a1a2e] rounded-xl flex items-center justify-center border border-[#D4AF37]/20 hover:border-[#D4AF37] transition-all hover:scale-110"
+            >
+              <svg
+                class="w-6 h-6 text-[#D4AF37]"
+                fill="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-[#1a1a2e] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <span class="text-[#D4AF37] text-sm tracking-widest uppercase"
+            >تواصل معنا</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
+            نحن هنا <span class="text-gradient">لخدمتك</span>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            تواصل معنا للحجز أو الاستفسار، فريقنا جاهز لمساعدتك على مدار الساعة
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div class="space-y-8">
+            <div
+              class="bg-gradient-to-br from-[#252545] to-[#1a1a2e] p-8 rounded-3xl border border-[#D4AF37]/20"
+            >
+              <h3 class="text-2xl font-bold mb-6 text-gradient">
+                معلومات التواصل
+              </h3>
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 gradient-gold rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-[#1a1a2e]"
+                      fill="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white mb-1">العنوان</h4>
+                    <p class="text-gray-400">محافظة إب – شارع الثلاثين</p>
+                    <p class="text-gray-400">جوار الجامعة الماليزية في اليمن</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 gradient-gold rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-[#1a1a2e]"
+                      fill="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white mb-1">أرقام التواصل</h4>
+                    <p class="text-gray-400 flex items-center gap-2">
+                      <span class="text-[#D4AF37]">جوال:</span>
+                      <a
+                        href="tel:+967770223322"
+                        class="hover:text-[#D4AF37] transition-colors"
+                        >770223322 967+</a
+                      >
+                    </p>
+                    <p class="text-gray-400 flex items-center gap-2">
+                      <span class="text-[#D4AF37]">هاتف:</span>
+                      <a
+                        href="tel:044454575"
+                        class="hover:text-[#D4AF37] transition-colors"
+                        >044-454575</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 gradient-gold rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-[#1a1a2e]"
+                      fill="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white mb-1">ساعات العمل</h4>
+                    <p class="text-gray-400">استقبال على مدار الساعة</p>
+                    <p class="text-[#D4AF37] text-sm">24 ساعة / 7 أيام</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-[#252545] to-[#1a1a2e] p-2 rounded-3xl border border-[#D4AF37]/20 overflow-hidden"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.4582361257475!2d44.159!3d13.979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603db0000000001%3A0x0!2z2KzYp9mF2LnYqSDYpdmB!5e0!3m2!1sar!2s!4v1714000000000!5m2!1sar!2s"
+                width="100%"
+                height="250"
+                style="border: 0; filter: invert(90%) hue-rotate(180deg)"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <div
+            class="bg-gradient-to-br from-[#252545] to-[#1a1a2e] p-8 rounded-3xl border border-[#D4AF37]/20"
+          >
+            <h3 class="text-2xl font-bold mb-6 text-gradient">احجز إقامتك</h3>
+            <form id="booking-form" class="space-y-6">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-sm text-gray-400 mb-2"
+                    >الاسم الكامل</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="أدخل اسمك"
+                    required
+                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-[#D4AF37] focus:outline-none transition-colors"
+                  />
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm text-gray-400 mb-2"
+                    >رقم الهاتف</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="رقم التواصل"
+                    required
+                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-[#D4AF37] focus:outline-none transition-colors"
+                  />
+                </div>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="checkin" class="block text-sm text-gray-400 mb-2"
+                    >تاريخ الوصول</label
+                  >
+                  <input
+                    type="date"
+                    id="checkin"
+                    required
+                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white focus:border-[#D4AF37] focus:outline-none transition-colors"
+                  />
+                </div>
+                <div>
+                  <label for="checkout" class="block text-sm text-gray-400 mb-2"
+                    >تاريخ المغادرة</label
+                  >
+                  <input
+                    type="date"
+                    id="checkout"
+                    required
+                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white focus:border-[#D4AF37] focus:outline-none transition-colors"
+                  />
+                </div>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    for="room-type"
+                    class="block text-sm text-gray-400 mb-2"
+                    >نوع الغرفة</label
+                  >
+                  <select
+                    id="room-type"
+                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white focus:border-[#D4AF37] focus:outline-none transition-colors"
+                  >
+                    <option value="">اختر نوع الغرفة</option>
+                    <option value="classic">غرفة كلاسيكية</option>
+                    <option value="deluxe">غرفة فاخرة</option>
+                    <option value="suite">جناح ملكي</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="guests" class="block text-sm text-gray-400 mb-2"
+                    >عدد الضيوف</label
+                  >
+                  <select
+                    id="guests"
+                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white focus:border-[#D4AF37] focus:outline-none transition-colors"
+                  >
+                    <option value="1">1 ضيف</option>
+                    <option value="2">2 ضيوف</option>
+                    <option value="3">3 ضيوف</option>
+                    <option value="4">4 ضيوف</option>
+                    <option value="5">5+ ضيوف</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label for="notes" class="block text-sm text-gray-400 mb-2"
+                  >ملاحظات إضافية</label
+                >
+                <textarea
+                  id="notes"
+                  rows="3"
+                  placeholder="أي طلبات خاصة..."
+                  class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-[#D4AF37] focus:outline-none transition-colors resize-none"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full gradient-gold text-[#1a1a2e] py-4 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-[#D4AF37]/40 transition-all flex items-center justify-center gap-2"
+              >
+                <span>إرسال طلب الحجز</span>
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+            </form>
+
+            <div
+              id="form-success"
+              class="hidden mt-6 p-4 bg-green-500/10 border border-green-500/30 rounded-xl text-center fade-in"
+            >
+              <svg
+                class="w-12 h-12 text-green-500 mx-auto mb-3"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <p class="text-green-400 font-bold">تم إرسال طلب الحجز بنجاح!</p>
+              <p class="text-gray-400 text-sm mt-1">
+                سنتواصل معك قريباً لتأكيد الحجز.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#0f0f1a] border-t border-[#D4AF37]/20 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-12">
+          <div class="md:col-span-2">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-12 h-12 gradient-gold rounded-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-[#1a1a2e]"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l6.9 3.45L12 11.09 5.1 7.63 12 4.18zM4 8.82l7 3.5v7.36l-7-3.5V8.82zm9 10.86v-7.36l7-3.5v7.36l-7 3.5z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-gradient">فندق هلتون إب</h3>
+                <p class="text-xs text-gray-500">HILTON IBB HOTEL</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed">
+              وجهتك المثالية للإقامة الفاخرة في قلب مدينة إب الخضراء. نقدم لكم
+              تجربة ضيافة يمنية أصيلة بمعايير عالمية.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-[#D4AF37] font-bold mb-4">روابط سريعة</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-[#D4AF37] transition-colors"
+                  >الرئيسية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#rooms"
+                  class="text-gray-400 hover:text-[#D4AF37] transition-colors"
+                  >الغرف</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-[#D4AF37] transition-colors"
+                  >الخدمات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-[#D4AF37] transition-colors"
+                  >تواصل معنا</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-[#D4AF37] font-bold mb-4">تواصل معنا</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>📍 شارع الثلاثين - إب</li>
+              <li>📞 770223322 967+</li>
+              <li>📞 044-454575</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-[#D4AF37]/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <p class="text-gray-500 text-sm">
+            © 2024 فندق هلتون إب السياحي. جميع الحقوق محفوظة.
+          </p>
+          <div class="flex items-center gap-4"></div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu logic - Fixed
+        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        if (mobileMenuBtn && mobileMenu) {
+          mobileMenuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+          });
+
+          mobileMenu.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+              mobileMenu.classList.add("hidden");
+            });
+          });
+        }
+
+        // Navbar scroll effect
+        const nav = document.getElementById("navbar");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 50) {
+            nav.classList.add("shadow-lg");
+            nav.classList.add("bg-[#1a1a2e]/95");
+          } else {
+            nav.classList.remove("shadow-lg");
+            nav.classList.remove("bg-[#1a1a2e]/95");
+            nav.classList.add("bg-[#1a1a2e]/80");
+          }
+        });
+
+        // Date inputs setup
+        const today = new Date().toISOString().split("T")[0];
+        const checkinInput = document.getElementById("checkin");
+        const checkoutInput = document.getElementById("checkout");
+
+        if (checkinInput && checkoutInput) {
+          checkinInput.setAttribute("min", today);
+          checkinInput.addEventListener("change", function () {
+            checkoutInput.setAttribute("min", this.value);
+          });
+        }
+      });
+
+      // Room Selection Helper
+      function selectRoom(type) {
+        document.getElementById("room-type").value = type;
+        document
+          .getElementById("booking-form")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Booking Form Submission
+      const bookingForm = document.getElementById("booking-form");
+      const formSuccess = document.getElementById("form-success");
+
+      if (bookingForm) {
+        bookingForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          // Simulate API call
+          const btn = bookingForm.querySelector("button");
+          const originalText = btn.innerHTML;
+          btn.innerHTML = "جارِ الإرسال...";
+          btn.disabled = true;
+
+          setTimeout(() => {
+            bookingForm.style.display = "none";
+            formSuccess.classList.remove("hidden");
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+
+            // Reset form after 5 seconds
+            setTimeout(() => {
+              bookingForm.reset();
+              bookingForm.style.display = "block";
+              formSuccess.classList.add("hidden");
+            }, 5000);
+          }, 1500);
+        });
+      }
+    </script>
+  </body>
+</html>

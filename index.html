@@ -3,1009 +3,1292 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>فندق هلتون إب السياحي | HILTON IBB HOTEL</title>
+    <title>الأولى للخرسانة الجاهزة والبلك الأوتوماتيكي | صنعاء - اليمن</title>
+    <meta
+      name="description"
+      content="الأولى للخرسانة الجاهزة - أفضل مورد خرسانة جاهزة وبلك أوتوماتيكي في صنعاء. توريد خرسانة جاهزة للمشاريع السكنية والتجارية. جودة عالية والتزام بالمواعيد."
+    />
+    <meta
+      name="keywords"
+      content="الخرسانة الجاهزة في صنعاء, توريد خرسانة جاهزة, الأولى للخرسانة الجاهزة, بلك أوتوماتيكي صنعاء, مواد بناء في صنعاء"
+    />
+    <meta name="author" content="الأولى للخرسانة الجاهزة والبلك الأوتوماتيكي" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://aloula-concrete.ye" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="الأولى للخرسانة الجاهزة والبلك الأوتوماتيكي"
+    />
+    <meta
+      property="og:description"
+      content="أفضل مورد خرسانة جاهزة وبلك أوتوماتيكي في صنعاء - اليمن. جودة عالية والتزام بالمواعيد."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ar_YE" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&amp;display=swap"
       rel="stylesheet"
     />
+    <script src="/_sdk/element_sdk.js"></script>
     <style>
-      /* إصلاح السلاسة في الانتقال */
-      html {
-        scroll-behavior: smooth;
-      }
       body {
         box-sizing: border-box;
       }
+
       * {
         font-family: "Tajawal", sans-serif;
       }
-      .font-display {
-        font-family: "Playfair Display", serif;
+
+      html {
+        scroll-behavior: smooth;
       }
 
-      .gradient-gold {
+      .hero-gradient {
         background: linear-gradient(
           135deg,
-          #d4af37 0%,
-          #f4e4ba 50%,
-          #d4af37 100%
+          #1a1a2e 0%,
+          #16213e 50%,
+          #0f3460 100%
         );
       }
 
-      .text-gradient {
-        background: linear-gradient(135deg, #d4af37, #f4e4ba);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      /* خلفية الهيرو */
-      .hero-bg {
-        background: linear-gradient(
-            135deg,
-            rgba(26, 26, 46, 0.85) 0%,
-            rgba(45, 45, 75, 0.75) 100%
-          ),
-          url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+      .concrete-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       }
 
       .card-hover {
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.3s ease;
       }
+
       .card-hover:hover {
         transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
       }
 
-      .shimmer {
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(212, 175, 55, 0.3),
-          transparent
-        );
-        background-size: 200% 100%;
-        animation: shimmer 2s infinite;
+      .nav-link {
+        position: relative;
       }
 
-      @keyframes shimmer {
-        0% {
-          background-position: -200% 0;
-        }
-        100% {
-          background-position: 200% 0;
-        }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        right: 0;
+        width: 0;
+        height: 2px;
+        background: #f59e0b;
+        transition: width 0.3s ease;
       }
 
-      @keyframes float {
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+        transform: scale(1.02);
+      }
+
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, #f59e0b, #d97706);
+        margin: 16px auto 0;
+        border-radius: 2px;
+      }
+
+      .whatsapp-float {
+        position: fixed;
+        bottom: 24px;
+        left: 24px;
+        z-index: 1000;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
         0%,
         100% {
-          transform: translateY(0px);
+          transform: scale(1);
         }
         50% {
-          transform: translateY(-10px);
+          transform: scale(1.1);
         }
       }
 
-      .float-animation {
-        animation: float 3s ease-in-out infinite;
+      .stat-card {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(255, 255, 255, 0.05) 100%
+        );
+        backdrop-filter: blur(10px);
       }
 
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      .project-card {
+        position: relative;
+        overflow: hidden;
       }
 
-      .animate-fade-in {
-        animation: fadeInUp 0.8s ease-out forwards;
+      .project-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8) 0%,
+          transparent 60%
+        );
+        z-index: 1;
       }
 
-      .delay-100 {
-        animation-delay: 0.1s;
-      }
-      .delay-200 {
-        animation-delay: 0.2s;
-      }
-      .delay-300 {
-        animation-delay: 0.3s;
-      }
-      .delay-400 {
-        animation-delay: 0.4s;
+      .project-card-content {
+        position: relative;
+        z-index: 2;
       }
 
-      .nav-blur {
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+      .mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
       }
 
-      ::-webkit-scrollbar {
-        width: 8px;
+      .mobile-menu.active {
+        transform: translateX(0);
       }
-      ::-webkit-scrollbar-track {
-        background: #1a1a2e;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: linear-gradient(180deg, #d4af37, #b8860b);
-        border-radius: 4px;
+
+      .value-icon {
+        background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
       }
     </style>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
   </head>
-  <body class="h-full bg-[#0f0f1a] text-white overflow-x-hidden">
-    <nav
-      class="fixed top-0 left-0 right-0 z-50 nav-blur bg-[#1a1a2e]/80 border-b border-[#D4AF37]/20 transition-all duration-300"
-      id="navbar"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-20">
-          <div class="flex items-center gap-3">
-            <div
-              class="w-12 h-12 gradient-gold rounded-full flex items-center justify-center shadow-lg shadow-[#D4AF37]/20"
+  <body class="h-full bg-gray-50 text-gray-800 overflow-auto">
+    <div class="w-full min-h-full">
+      <!-- Top Bar -->
+      <div class="hidden lg:block bg-slate-900 text-white py-2 text-sm">
+        <div
+          class="max-w-7xl mx-auto px-4 flex flex-wrap justify-between items-center gap-2"
+        >
+          <div class="flex items-center gap-4 flex-wrap">
+            <a
+              href="tel:+967777111176"
+              class="flex items-center gap-2 hover:text-amber-400 transition-colors"
             >
               <svg
-                class="w-7 h-7 text-[#1a1a2e]"
-                fill="currentColor"
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
                 viewbox="0 0 24 24"
               >
                 <path
-                  d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l6.9 3.45L12 11.09 5.1 7.63 12 4.18zM4 8.82l7 3.5v7.36l-7-3.5V8.82zm9 10.86v-7.36l7-3.5v7.36l-7 3.5z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                /></svg
+              ><span id="topPhoneDisplay">777111176</span>
+            </a>
+            <span class="sm:flex items-center gap-2">
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                /></svg
+              ><span id="topAddressDisplay">شارع الستين – صنعاء – اليمن</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation -->
+      <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center gap-3">
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center shadow-lg"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  viewbox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l6.9 3.45L12 11.09 5.1 7.63 12 4.18zM4 8.82l7 3.5v7.36l-7-3.5V8.82zm9 10.86V12.32l7-3.5v7.36l-7 3.5z"
+                  />
+                </svg>
+              </div>
+              <div class="sm:block">
+                <h1 class="text-lg font-bold text-slate-800 leading-tight">
+                  الأولى للخرسانة الجاهزة
+                </h1>
+                <p class="text-xs text-amber-600 font-medium">
+                  والبلك الأوتوماتيكي
+                </p>
+              </div></a
+            >
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-8">
+              <a
+                href="#home"
+                class="nav-link text-slate-700 hover:text-amber-600 font-medium"
+                >الرئيسية</a
+              >
+              <a
+                href="#about"
+                class="nav-link text-slate-700 hover:text-amber-600 font-medium"
+                >من نحن</a
+              >
+              <a
+                href="#services"
+                class="nav-link text-slate-700 hover:text-amber-600 font-medium"
+                >خدماتنا</a
+              >
+              <a
+                href="#why-us"
+                class="nav-link text-slate-700 hover:text-amber-600 font-medium"
+                >لماذا نحن</a
+              >
+              <a
+                href="#projects"
+                class="nav-link text-slate-700 hover:text-amber-600 font-medium"
+                >مشاريعنا</a
+              >
+              <a
+                href="#location"
+                class="nav-link text-slate-700 hover:text-amber-600 font-medium"
+                >موقعنا</a
+              >
+              <a
+                href="#contact"
+                class="btn-primary text-white px-6 py-2.5 rounded-lg font-medium shadow-lg"
+                >تواصل معنا</a
+              >
+            </div>
+            <!-- Mobile Menu Button -->
+            <button
+              id="mobileMenuBtn"
+              class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-slate-700"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
-            </div>
-            <div>
-              <h1 class="text-xl font-bold text-gradient">فندق هلتون إب</h1>
-              <p class="text-xs text-[#D4AF37]/60 tracking-wider">
-                HILTON IBB HOTEL
-              </p>
-            </div>
-          </div>
-
-          <div class="hidden md:flex items-center gap-8">
-            <a
-              href="#home"
-              class="text-[#D4AF37] hover:text-[#F4E4BA] transition-colors font-medium"
-              >الرئيسية</a
-            >
-            <a
-              href="#rooms"
-              class="text-gray-300 hover:text-[#D4AF37] transition-colors"
-              >الغرف</a
-            >
-            <a
-              href="#services"
-              class="text-gray-300 hover:text-[#D4AF37] transition-colors"
-              >الخدمات</a
-            >
-            <a
-              href="#gallery"
-              class="text-gray-300 hover:text-[#D4AF37] transition-colors"
-              >المعرض</a
-            >
-            <a
-              href="#contact"
-              class="text-gray-300 hover:text-[#D4AF37] transition-colors"
-              >تواصل معنا</a
-            >
-            <button
-              onclick="document.getElementById('contact').scrollIntoView()"
-              class="gradient-gold text-[#1a1a2e] px-6 py-2.5 rounded-full font-bold hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all transform hover:scale-105"
-            >
-              احجز الآن
             </button>
           </div>
-
-          <button
-            id="mobile-menu-btn"
-            class="md:hidden text-[#D4AF37] p-2 hover:bg-[#D4AF37]/10 rounded-lg transition-colors cursor-pointer"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewbox="0 0 24 24"
+        </div>
+        <!-- Mobile Menu -->
+        <div
+          id="mobileMenu"
+          class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white shadow-2xl lg:hidden"
+        >
+          <div class="p-6">
+            <button
+              id="closeMobileMenu"
+              class="absolute top-4 left-4 p-2 rounded-lg hover:bg-gray-100"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <div class="mt-12 space-y-4">
+              <a
+                href="#home"
+                class="block py-3 px-4 text-slate-700 hover:bg-amber-50 hover:text-amber-600 rounded-lg font-medium transition-colors"
+                >الرئيسية</a
+              >
+              <a
+                href="#about"
+                class="block py-3 px-4 text-slate-700 hover:bg-amber-50 hover:text-amber-600 rounded-lg font-medium transition-colors"
+                >من نحن</a
+              >
+              <a
+                href="#services"
+                class="block py-3 px-4 text-slate-700 hover:bg-amber-50 hover:text-amber-600 rounded-lg font-medium transition-colors"
+                >خدماتنا</a
+              >
+              <a
+                href="#why-us"
+                class="block py-3 px-4 text-slate-700 hover:bg-amber-50 hover:text-amber-600 rounded-lg font-medium transition-colors"
+                >لماذا نحن</a
+              >
+              <a
+                href="#projects"
+                class="block py-3 px-4 text-slate-700 hover:bg-amber-50 hover:text-amber-600 rounded-lg font-medium transition-colors"
+                >مشاريعنا</a
+              >
+              <a
+                href="#location"
+                class="block py-3 px-4 text-slate-700 hover:bg-amber-50 hover:text-amber-600 rounded-lg font-medium transition-colors"
+                >موقعنا</a
+              >
+              <a
+                href="#contact"
+                class="block py-3 px-4 bg-amber-500 text-white rounded-lg font-medium text-center mt-6"
+                >تواصل معنا</a
+              >
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden bg-[#1a1a2e]/95 border-t border-[#D4AF37]/20 backdrop-blur-xl absolute w-full left-0 z-40"
+      </nav>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="hero-gradient concrete-pattern relative overflow-hidden"
       >
-        <div class="px-4 py-4 space-y-3">
-          <a
-            href="#home"
-            class="block py-2 text-[#D4AF37] hover:bg-[#D4AF37]/10 px-2 rounded"
-            >الرئيسية</a
-          >
-          <a
-            href="#rooms"
-            class="block py-2 text-gray-300 hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 px-2 rounded"
-            >الغرف</a
-          >
-          <a
-            href="#services"
-            class="block py-2 text-gray-300 hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 px-2 rounded"
-            >الخدمات</a
-          >
-          <a
-            href="#gallery"
-            class="block py-2 text-gray-300 hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 px-2 rounded"
-            >المعرض</a
-          >
-          <a
-            href="#contact"
-            class="block py-2 text-gray-300 hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 px-2 rounded"
-            >تواصل معنا</a
-          >
-          <button
-            onclick="document.getElementById('contact').scrollIntoView()"
-            class="w-full gradient-gold text-[#1a1a2e] py-3 rounded-full font-bold mt-4"
-          >
-            احجز الآن
-          </button>
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"
+        ></div>
+        <div class="max-w-7xl mx-auto px-4 py-20 lg:py-32 relative z-10">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white">
+              <div
+                class="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/30 rounded-full px-4 py-2 mb-6"
+              >
+                <span
+                  class="w-2 h-2 bg-amber-400 rounded-full animate-pulse"
+                ></span>
+                <span class="text-slate-600 text-sm font-medium"
+                  >الشريك الموثوق في البناء</span
+                >
+              </div>
+              <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+                <span class="text-slate-600">الأولى</span>
+                <span class="text-amber-400"> للخرسانة الجاهزة</span>
+                <br /><span class="text-slate-600/90">والبلك الأوتوماتيكي</span>
+              </h1>
+              <p class="text-lg lg:text-xl text-gray-500 mb-8 leading-relaxed">
+                نوفر لكم خرسانة جاهزة عالية الجودة وبلك أوتوماتيكي مطابق
+                للمواصفات الفنية. شريككم الموثوق في البناء بأعلى معايير الجودة
+                والالتزام.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="#contact"
+                  class="btn-primary text-slate-500 px-8 py-4 rounded-xl font-bold text-lg shadow-xl flex items-center gap-2"
+                >
+                  <span>اطلب عرض سعر</span>
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    /></svg
+                ></a>
+                <a
+                  href="tel:+967777111176"
+                  class="bg-white/10 backdrop-blur border border-white/20 text-slate-500 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all flex items-center gap-2"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    /></svg
+                  ><span>اتصل الآن</span>
+                </a>
+              </div>
+              <!-- Stats -->
+              <div class="grid grid-cols-3 gap-4 mt-12">
+                <div
+                  class="stat-card rounded-xl p-4 text-center border border-white/10"
+                >
+                  <div class="text-3xl lg:text-4xl font-bold text-amber-400">
+                    +500
+                  </div>
+                  <div class="text-sm text-gray-600 mt-1">مشروع منجز</div>
+                </div>
+                <div
+                  class="stat-card rounded-xl p-4 text-center border border-white/10"
+                >
+                  <div class="text-3xl lg:text-4xl font-bold text-amber-400">
+                    +15
+                  </div>
+                  <div class="text-sm text-gray-600 mt-1">سنة خبرة</div>
+                </div>
+                <div
+                  class="stat-card rounded-xl p-4 text-center border border-white/10"
+                >
+                  <div class="text-3xl lg:text-4xl font-bold text-amber-400">
+                    +200
+                  </div>
+                  <div class="text-sm text-gray-600 mt-1">عميل راضٍ</div>
+                </div>
+              </div>
+            </div>
+            <!-- Hero Image -->
+            <div class="hidden lg:block">
+              <div class="relative">
+                <div
+                  class="absolute -inset-4 bg-amber-500/20 rounded-3xl blur-2xl"
+                ></div>
+                <img
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&amp;h=500&amp;fit=crop"
+                  alt="خرسانة جاهزة - الأولى للخرسانة"
+                  class="relative rounded-3xl shadow-2xl w-full object-cover"
+                  loading="lazy"
+                  onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #f59e0b 0%, #d97706 100%)'; this.alt='صورة خرسانة جاهزة';"
+                />
+                <div
+                  class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3"
+                >
+                  <div
+                    class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-6 h-6 text-green-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-bold text-slate-800">جودة معتمدة</div>
+                    <div class="text-sm text-gray-500">مطابق للمواصفات</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <section
-      id="home"
-      class="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden"
-    >
-      <div
-        class="absolute top-20 right-10 w-32 h-32 border border-[#D4AF37]/20 rotate-45 float-animation rounded-xl"
-      ></div>
-      <div
-        class="absolute bottom-20 left-10 w-24 h-24 border border-[#D4AF37]/20 rotate-12 float-animation rounded-xl"
-        style="animation-delay: 1s"
-      ></div>
-
-      <div class="relative z-10 text-center px-4 max-w-5xl mx-auto pt-20">
-        <div class="animate-fade-in">
-          <div
-            class="inline-flex items-center gap-2 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full px-6 py-2 mb-8 backdrop-blur-sm"
+        <!-- Wave Separator -->
+        <div class="absolute bottom-0 left-0 right-0">
+          <svg
+            viewbox="0 0 1440 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
+            <path
+              d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+              fill="#f9fafb"
+            />
+          </svg>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-16">
             <span
-              class="w-2 h-2 bg-[#D4AF37] rounded-full animate-pulse"
-            ></span>
-            <span class="text-[#D4AF37] text-sm"
-              >مرحباً بكم في عالم الفخامة</span
+              class="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-4"
+              >تعرف علينا</span
             >
-          </div>
-        </div>
-        <h1 class="animate-fade-in delay-100">
-          <span
-            class="block text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight"
-            >تجربة ضيافة استثنائية</span
-          >
-          <span
-            class="block text-2xl sm:text-3xl md:text-4xl text-gradient font-display"
-            >في قلب مدينة إب الخضراء</span
-          >
-        </h1>
-        <p
-          class="animate-fade-in delay-200 text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mt-8 leading-relaxed shadow-black drop-shadow-md"
-        >
-          استمتع بإقامة لا تُنسى في أرقى فنادق محافظة إب، حيث تلتقي الأصالة
-          اليمنية بالفخامة العصرية
-        </p>
-        <div
-          class="animate-fade-in delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mt-10"
-        >
-          <a
-            href="#rooms"
-            class="group gradient-gold text-[#1a1a2e] px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-[#D4AF37]/40 transition-all flex items-center gap-3"
-          >
-            <span>استكشف غرفنا</span>
-            <svg
-              class="w-5 h-5 group-hover:-translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewbox="0 0 24 24"
+            <h2
+              class="section-title text-3xl lg:text-4xl font-bold text-slate-800"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <div
-          class="animate-fade-in delay-400 grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-16 border-t border-[#D4AF37]/20 backdrop-blur-sm bg-black/20 rounded-2xl p-6"
-        >
-          <div class="text-center">
-            <div class="text-4xl md:text-5xl font-bold text-gradient">50+</div>
-            <div class="text-gray-400 mt-2">غرفة فاخرة</div>
+              من نحن
+            </h2>
           </div>
-          <div class="text-center">
-            <div class="text-4xl md:text-5xl font-bold text-gradient">15+</div>
-            <div class="text-gray-400 mt-2">جناح ملكي</div>
-          </div>
-          <div class="text-center">
-            <div class="text-4xl md:text-5xl font-bold text-gradient">4.9</div>
-            <div class="text-gray-400 mt-2">تقييم النزلاء</div>
-          </div>
-          <div class="text-center">
-            <div class="text-4xl md:text-5xl font-bold text-gradient">24/7</div>
-            <div class="text-gray-400 mt-2">خدمة متواصلة</div>
-          </div>
-        </div>
-      </div>
-
-      <a
-        href="#rooms"
-        class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer"
-      >
-        <div
-          class="w-6 h-10 border-2 border-[#D4AF37]/50 rounded-full flex items-start justify-center p-2"
-        >
-          <div class="w-1.5 h-3 bg-[#D4AF37] rounded-full animate-pulse"></div>
-        </div>
-      </a>
-    </section>
-
-    <section
-      id="rooms"
-      class="py-24 bg-gradient-to-b from-[#0f0f1a] to-[#1a1a2e] relative"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16">
-          <span class="text-[#D4AF37] text-sm tracking-widest uppercase"
-            >الإقامة</span
-          >
-          <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            غرفنا <span class="text-gradient">وأجنحتنا</span>
-          </h2>
-          <p class="text-gray-400 max-w-2xl mx-auto">
-            اختر من بين مجموعة متنوعة من الغرف والأجنحة المصممة لتوفير أقصى
-            درجات الراحة والفخامة
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            class="card-hover group bg-[#1a1a2e] rounded-3xl overflow-hidden border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 shadow-xl"
-          >
-            <div class="h-64 relative overflow-hidden">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
               <img
-                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80"
-                alt="الغرفة الكلاسيكية"
-                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-              />
-              <div
-                class="absolute top-4 right-4 bg-[#D4AF37] text-[#1a1a2e] px-4 py-1 rounded-full text-sm font-bold shadow-lg"
-              >
-                الأكثر طلباً
-              </div>
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent"
-              ></div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-2xl font-bold mb-2">الغرفة الكلاسيكية</h3>
-              <p class="text-gray-400 mb-4 text-sm line-clamp-2">
-                غرفة أنيقة بتصميم عصري مع إطلالة رائعة على المدينة، مثالية
-                للمسافرين المنفردين أو الأزواج.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span
-                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
-                  >سرير مزدوج</span
-                >
-                <span
-                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
-                  >WiFi مجاني</span
-                >
-                <span
-                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
-                  >إفطار</span
-                >
-              </div>
-              <div
-                class="flex items-center justify-between border-t border-gray-700 pt-4"
-              >
-                <div>
-                  <span class="text-3xl font-bold text-gradient">$80</span>
-                  <span class="text-gray-400 text-sm"> / الليلة</span>
-                </div>
-                <button
-                  onclick="selectRoom('classic')"
-                  class="gradient-gold text-[#1a1a2e] px-6 py-2.5 rounded-full font-bold hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all text-sm"
-                >
-                  احجز الآن
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="card-hover group bg-[#1a1a2e] rounded-3xl overflow-hidden border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 shadow-xl"
-          >
-            <div class="h-64 relative overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80"
-                alt="الغرفة الفاخرة"
-                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent"
-              ></div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-2xl font-bold mb-2">الغرفة الفاخرة (ديلوكس)</h3>
-              <p class="text-gray-400 mb-4 text-sm line-clamp-2">
-                مساحة أوسع مع منطقة جلوس منفصلة وحمام فاخر مجهز بأحدث التجهيزات
-                لراحتك.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span
-                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
-                  >سرير كينج</span
-                >
-                <span
-                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
-                  >ميني بار</span
-                >
-                <span
-                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
-                  >جاكوزي</span
-                >
-              </div>
-              <div
-                class="flex items-center justify-between border-t border-gray-700 pt-4"
-              >
-                <div>
-                  <span class="text-3xl font-bold text-gradient">$120</span>
-                  <span class="text-gray-400 text-sm"> / الليلة</span>
-                </div>
-                <button
-                  onclick="selectRoom('deluxe')"
-                  class="gradient-gold text-[#1a1a2e] px-6 py-2.5 rounded-full font-bold hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all text-sm"
-                >
-                  احجز الآن
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="card-hover group bg-[#1a1a2e] rounded-3xl overflow-hidden border border-[#D4AF37]/30 hover:border-[#D4AF37]/60 relative shadow-xl"
-          >
-            <div
-              class="absolute top-0 right-0 left-0 h-1 gradient-gold shimmer z-20"
-            ></div>
-            <div class="h-64 relative overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80"
-                alt="الجناح الملكي"
-                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-              />
-              <div
-                class="absolute top-4 right-4 bg-gradient-to-r from-[#D4AF37] to-[#F4E4BA] text-[#1a1a2e] px-4 py-1 rounded-full text-sm font-bold shadow-lg"
-              >
-                ⭐ الجناح الملكي
-              </div>
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent"
-              ></div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-2xl font-bold mb-2">الجناح الملكي</h3>
-              <p class="text-gray-400 mb-4 text-sm line-clamp-2">
-                تجربة ملكية فاخرة مع غرفة نوم وصالة استقبال وشرفة خاصة بإطلالة
-                بانورامية على مدينة إب.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span
-                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
-                  >غرفتين</span
-                >
-                <span
-                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
-                  >خدمة VIP</span
-                >
-                <span
-                  class="bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-xs"
-                  >شرفة</span
-                >
-              </div>
-              <div
-                class="flex items-center justify-between border-t border-gray-700 pt-4"
-              >
-                <div>
-                  <span class="text-3xl font-bold text-gradient">$200</span>
-                  <span class="text-gray-400 text-sm"> / الليلة</span>
-                </div>
-                <button
-                  onclick="selectRoom('suite')"
-                  class="gradient-gold text-[#1a1a2e] px-6 py-2.5 rounded-full font-bold hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all text-sm"
-                >
-                  احجز الآن
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="py-24 bg-[#1a1a2e] relative overflow-hidden">
-      <div
-        class="absolute top-0 left-0 w-96 h-96 bg-[#D4AF37]/5 rounded-full blur-3xl"
-      ></div>
-      <div
-        class="absolute bottom-0 right-0 w-96 h-96 bg-[#D4AF37]/5 rounded-full blur-3xl"
-      ></div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16">
-          <span class="text-[#D4AF37] text-sm tracking-widest uppercase"
-            >المرافق</span
-          >
-          <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            خدماتنا <span class="text-gradient">المميزة</span>
-          </h2>
-          <p class="text-gray-400 max-w-2xl mx-auto">
-            نقدم لكم مجموعة متكاملة من الخدمات الراقية لضمان إقامة مثالية
-          </p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div
-            class="card-hover group bg-[#252545]/50 p-8 rounded-2xl border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 text-center hover:bg-[#252545]"
-          >
-            <div
-              class="w-16 h-16 mx-auto mb-6 gradient-gold rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-[#D4AF37]/10"
-            >
-              <svg
-                class="w-8 h-8 text-[#1a1a2e]"
-                fill="currentColor"
-                viewbox="0 0 24 24"
-              >
-                <path
-                  d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-3">مطعم فاخر</h3>
-            <p class="text-gray-400 text-sm">
-              أشهى المأكولات اليمنية والعالمية
-            </p>
-          </div>
-          <div
-            class="card-hover group bg-[#252545]/50 p-8 rounded-2xl border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 text-center hover:bg-[#252545]"
-          >
-            <div
-              class="w-16 h-16 mx-auto mb-6 gradient-gold rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-[#D4AF37]/10"
-            >
-              <svg
-                class="w-8 h-8 text-[#1a1a2e]"
-                fill="currentColor"
-                viewbox="0 0 24 24"
-              >
-                <path
-                  d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-3">WiFi فائق السرعة</h3>
-            <p class="text-gray-400 text-sm">
-              إنترنت مجاني في كافة أرجاء الفندق
-            </p>
-          </div>
-          <div
-            class="card-hover group bg-[#252545]/50 p-8 rounded-2xl border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 text-center hover:bg-[#252545]"
-          >
-            <div
-              class="w-16 h-16 mx-auto mb-6 gradient-gold rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-[#D4AF37]/10"
-            >
-              <svg
-                class="w-8 h-8 text-[#1a1a2e]"
-                fill="currentColor"
-                viewbox="0 0 24 24"
-              >
-                <path
-                  d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-3">مواقف سيارات</h3>
-            <p class="text-gray-400 text-sm">مواقف آمنة ومجانية للنزلاء</p>
-          </div>
-          <div
-            class="card-hover group bg-[#252545]/50 p-8 rounded-2xl border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 text-center hover:bg-[#252545]"
-          >
-            <div
-              class="w-16 h-16 mx-auto mb-6 gradient-gold rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-[#D4AF37]/10"
-            >
-              <svg
-                class="w-8 h-8 text-[#1a1a2e]"
-                fill="currentColor"
-                viewbox="0 0 24 24"
-              >
-                <path
-                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-3">قاعات اجتماعات</h3>
-            <p class="text-gray-400 text-sm">
-              قاعات مجهزة للمؤتمرات والفعاليات
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="gallery"
-      class="py-24 bg-gradient-to-b from-[#1a1a2e] to-[#0f0f1a]"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="text-[#D4AF37] text-sm tracking-widest uppercase"
-            >جولة مصورة</span
-          >
-          <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            معرض <span class="text-gradient">الصور</span>
-          </h2>
-          <p class="text-gray-400 max-w-2xl mx-auto">
-            اكتشف أجواء الفخامة والراحة من خلال صور فندقنا
-          </p>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <div
-            class="group relative h-48 md:h-64 rounded-2xl overflow-hidden card-hover cursor-pointer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
-              alt="واجهة الفندق"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
-            >
-              <span class="text-white font-medium">واجهة الفندق</span>
-            </div>
-          </div>
-
-          <div
-            class="group relative h-48 md:h-64 rounded-2xl overflow-hidden card-hover col-span-2 row-span-2 cursor-pointer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80"
-              alt="الجناح الملكي"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
-            >
-              <span class="text-white font-medium">الجناح الملكي</span>
-            </div>
-          </div>
-
-          <div
-            class="group relative h-48 md:h-64 rounded-2xl overflow-hidden card-hover cursor-pointer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80"
-              alt="المطعم"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
-            >
-              <span class="text-white font-medium">المطعم</span>
-            </div>
-          </div>
-
-          <div
-            class="group relative h-48 md:h-64 rounded-2xl overflow-hidden card-hover cursor-pointer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=800&q=80"
-              alt="الكافيه"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
-            >
-              <span class="text-white font-medium">الكافيه</span>
-            </div>
-          </div>
-
-          <div
-            class="group relative h-48 md:h-64 rounded-2xl overflow-hidden card-hover cursor-pointer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=800&q=80"
-              alt="صالة الاستقبال"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
-            >
-              <span class="text-white font-medium">صالة الاستقبال</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-12 text-center">
-          <p class="text-gray-400 mb-6">
-            تابعنا على وسائل التواصل لمشاهدة المزيد
-          </p>
-          <div class="flex items-center justify-center gap-4">
-            <a
-              href="https://www.facebook.com/Hltonibb"
-              target="_blank"
-              class="group w-14 h-14 bg-gradient-to-br from-[#252545] to-[#1a1a2e] rounded-xl flex items-center justify-center border border-[#D4AF37]/20 hover:border-[#D4AF37] transition-all hover:scale-110"
-            >
-              <svg
-                class="w-6 h-6 text-[#D4AF37]"
-                fill="currentColor"
-                viewbox="0 0 24 24"
-              >
-                <path
-                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://www.instagram.com/hlton_ibb?igsh=MWtoZmNwaHQOcW5hdw=="
-              target="_blank"
-              class="group w-14 h-14 bg-gradient-to-br from-[#252545] to-[#1a1a2e] rounded-xl flex items-center justify-center border border-[#D4AF37]/20 hover:border-[#D4AF37] transition-all hover:scale-110"
-            >
-              <svg
-                class="w-6 h-6 text-[#D4AF37]"
-                fill="currentColor"
-                viewbox="0 0 24 24"
-              >
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-24 bg-[#1a1a2e] relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16">
-          <span class="text-[#D4AF37] text-sm tracking-widest uppercase"
-            >تواصل معنا</span
-          >
-          <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            نحن هنا <span class="text-gradient">لخدمتك</span>
-          </h2>
-          <p class="text-gray-400 max-w-2xl mx-auto">
-            تواصل معنا للحجز أو الاستفسار، فريقنا جاهز لمساعدتك على مدار الساعة
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-12">
-          <div class="space-y-8">
-            <div
-              class="bg-gradient-to-br from-[#252545] to-[#1a1a2e] p-8 rounded-3xl border border-[#D4AF37]/20"
-            >
-              <h3 class="text-2xl font-bold mb-6 text-gradient">
-                معلومات التواصل
-              </h3>
-              <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                  <div
-                    class="w-12 h-12 gradient-gold rounded-xl flex items-center justify-center flex-shrink-0"
-                  >
-                    <svg
-                      class="w-6 h-6 text-[#1a1a2e]"
-                      fill="currentColor"
-                      viewbox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="font-bold text-white mb-1">العنوان</h4>
-                    <p class="text-gray-400">محافظة إب – شارع الثلاثين</p>
-                    <p class="text-gray-400">جوار الجامعة الماليزية في اليمن</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <div
-                    class="w-12 h-12 gradient-gold rounded-xl flex items-center justify-center flex-shrink-0"
-                  >
-                    <svg
-                      class="w-6 h-6 text-[#1a1a2e]"
-                      fill="currentColor"
-                      viewbox="0 0 24 24"
-                    >
-                      <path
-                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="font-bold text-white mb-1">أرقام التواصل</h4>
-                    <p class="text-gray-400 flex items-center gap-2">
-                      <span class="text-[#D4AF37]">جوال:</span>
-                      <a
-                        href="tel:+967770223322"
-                        class="hover:text-[#D4AF37] transition-colors"
-                        >770223322 967+</a
-                      >
-                    </p>
-                    <p class="text-gray-400 flex items-center gap-2">
-                      <span class="text-[#D4AF37]">هاتف:</span>
-                      <a
-                        href="tel:044454575"
-                        class="hover:text-[#D4AF37] transition-colors"
-                        >044-454575</a
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <div
-                    class="w-12 h-12 gradient-gold rounded-xl flex items-center justify-center flex-shrink-0"
-                  >
-                    <svg
-                      class="w-6 h-6 text-[#1a1a2e]"
-                      fill="currentColor"
-                      viewbox="0 0 24 24"
-                    >
-                      <path
-                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="font-bold text-white mb-1">ساعات العمل</h4>
-                    <p class="text-gray-400">استقبال على مدار الساعة</p>
-                    <p class="text-[#D4AF37] text-sm">24 ساعة / 7 أيام</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="bg-gradient-to-br from-[#252545] to-[#1a1a2e] p-2 rounded-3xl border border-[#D4AF37]/20 overflow-hidden"
-            >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.4582361257475!2d44.159!3d13.979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603db0000000001%3A0x0!2z2KzYp9mF2LnYqSDYpdmB!5e0!3m2!1sar!2s!4v1714000000000!5m2!1sar!2s"
-                width="100%"
-                height="250"
-                style="border: 0; filter: invert(90%) hue-rotate(180deg)"
-                allowfullscreen=""
+                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;h=450&amp;fit=crop"
+                alt="مصنع الأولى للخرسانة الجاهزة في صنعاء"
+                class="rounded-2xl shadow-xl w-full"
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+                onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #64748b 0%, #475569 100%)'; this.style.height='450px'; this.alt='صورة المصنع';"
+              />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-800 mb-4">
+                الأولى للخرسانة الجاهزة والبلك الأوتوماتيكي
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                تُعد الأولى للخرسانة الجاهزة والبلك الأوتوماتيكي من الشركات
+                الرائدة في مجال توريد مواد البناء في اليمن. تأسست بهدف تقديم
+                خدمات متميزة في مجال الخرسانة الجاهزة والبلك الأوتوماتيكي،
+                مستندة إلى خبرة واسعة في هذا المجال وفريق عمل محترف يسعى دائماً
+                لتحقيق أعلى معايير الجودة.
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-8">
+                نلتزم بتوفير منتجات مطابقة للمواصفات الفنية العالمية، مع الحرص
+                على استخدام أحدث المعدات والتقنيات في عمليات الإنتاج والتوريد.
+                نفخر بثقة عملائنا من المقاولين وشركات المقاولات وأصحاب المشاريع
+                في صنعاء.
+              </p>
+              <!-- Vision, Mission, Values -->
+              <div class="grid sm:grid-cols-3 gap-4">
+                <div
+                  class="bg-white rounded-xl p-4 shadow-md border-r-4 border-amber-500"
+                >
+                  <div class="flex items-center gap-2 mb-2">
+                    <svg
+                      class="w-5 h-5 text-amber-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                      />
+                    </svg>
+                    <h4 class="font-bold text-slate-800">رؤيتنا</h4>
+                  </div>
+                  <p class="text-sm text-gray-600">
+                    أن نكون الخيار الأول في توريد الخرسانة الجاهزة في اليمن
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-xl p-4 shadow-md border-r-4 border-blue-500"
+                >
+                  <div class="flex items-center gap-2 mb-2">
+                    <svg
+                      class="w-5 h-5 text-blue-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                    <h4 class="font-bold text-slate-800">رسالتنا</h4>
+                  </div>
+                  <p class="text-sm text-gray-600">
+                    تقديم خدمات متميزة بجودة عالية وأسعار تنافسية
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-xl p-4 shadow-md border-r-4 border-green-500"
+                >
+                  <div class="flex items-center gap-2 mb-2">
+                    <svg
+                      class="w-5 h-5 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <h4 class="font-bold text-slate-800">قيمنا</h4>
+                  </div>
+                  <p class="text-sm text-gray-600">
+                    الجودة - الثقة - الالتزام - السلامة
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div
-            class="bg-gradient-to-br from-[#252545] to-[#1a1a2e] p-8 rounded-3xl border border-[#D4AF37]/20"
-          >
-            <h3 class="text-2xl font-bold mb-6 text-gradient">احجز إقامتك</h3>
-            <form id="booking-form" class="space-y-6">
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label for="name" class="block text-sm text-gray-400 mb-2"
-                    >الاسم الكامل</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="أدخل اسمك"
-                    required
-                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-[#D4AF37] focus:outline-none transition-colors"
-                  />
-                </div>
-                <div>
-                  <label for="phone" class="block text-sm text-gray-400 mb-2"
-                    >رقم الهاتف</label
-                  >
-                  <input
-                    type="tel"
-                    id="phone"
-                    placeholder="رقم التواصل"
-                    required
-                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-[#D4AF37] focus:outline-none transition-colors"
-                  />
-                </div>
-              </div>
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label for="checkin" class="block text-sm text-gray-400 mb-2"
-                    >تاريخ الوصول</label
-                  >
-                  <input
-                    type="date"
-                    id="checkin"
-                    required
-                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white focus:border-[#D4AF37] focus:outline-none transition-colors"
-                  />
-                </div>
-                <div>
-                  <label for="checkout" class="block text-sm text-gray-400 mb-2"
-                    >تاريخ المغادرة</label
-                  >
-                  <input
-                    type="date"
-                    id="checkout"
-                    required
-                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white focus:border-[#D4AF37] focus:outline-none transition-colors"
-                  />
-                </div>
-              </div>
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label
-                    for="room-type"
-                    class="block text-sm text-gray-400 mb-2"
-                    >نوع الغرفة</label
-                  >
-                  <select
-                    id="room-type"
-                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white focus:border-[#D4AF37] focus:outline-none transition-colors"
-                  >
-                    <option value="">اختر نوع الغرفة</option>
-                    <option value="classic">غرفة كلاسيكية</option>
-                    <option value="deluxe">غرفة فاخرة</option>
-                    <option value="suite">جناح ملكي</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="guests" class="block text-sm text-gray-400 mb-2"
-                    >عدد الضيوف</label
-                  >
-                  <select
-                    id="guests"
-                    class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white focus:border-[#D4AF37] focus:outline-none transition-colors"
-                  >
-                    <option value="1">1 ضيف</option>
-                    <option value="2">2 ضيوف</option>
-                    <option value="3">3 ضيوف</option>
-                    <option value="4">4 ضيوف</option>
-                    <option value="5">5+ ضيوف</option>
-                  </select>
-                </div>
-              </div>
-              <div>
-                <label for="notes" class="block text-sm text-gray-400 mb-2"
-                  >ملاحظات إضافية</label
-                >
-                <textarea
-                  id="notes"
-                  rows="3"
-                  placeholder="أي طلبات خاصة..."
-                  class="w-full bg-[#1a1a2e] border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-[#D4AF37] focus:outline-none transition-colors resize-none"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full gradient-gold text-[#1a1a2e] py-4 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-[#D4AF37]/40 transition-all flex items-center justify-center gap-2"
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <span
+              class="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-4"
+              >ما نقدمه</span
+            >
+            <h2
+              class="section-title text-3xl lg:text-4xl font-bold text-slate-800"
+            >
+              خدماتنا
+            </h2>
+            <p class="text-gray-600 mt-6 max-w-2xl mx-auto">
+              نقدم مجموعة متكاملة من خدمات توريد الخرسانة الجاهزة والبلك
+              الأوتوماتيكي لتلبية جميع احتياجات مشاريعكم
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Service 1 -->
+            <div
+              class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg"
               >
-                <span>إرسال طلب الحجز</span>
+                <svg
+                  class="w-8 h-8 text-white"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">
+                الخرسانة الجاهزة
+              </h3>
+              <p class="text-gray-600 mb-4">
+                توريد خرسانة جاهزة عالية الجودة للمشاريع السكنية والتجارية
+                بمختلف درجات القوة.
+              </p>
+              <div class="flex items-center text-amber-600 font-medium">
+                <span>مطابقة للمواصفات</span>
+                <svg
+                  class="w-4 h-4 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- Service 2 -->
+            <div
+              class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">
+                البلك الأوتوماتيكي
+              </h3>
+              <p class="text-gray-600 mb-4">
+                إنتاج وتوريد بلك أوتوماتيكي بمختلف الأحجام والمقاسات لجميع أنواع
+                البناء.
+              </p>
+              <div class="flex items-center text-blue-600 font-medium">
+                <span>جودة عالية</span>
+                <svg
+                  class="w-4 h-4 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- Service 3 -->
+            <div
+              class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">
+                التوصيل والنقل
+              </h3>
+              <p class="text-gray-600 mb-4">
+                خدمة توصيل سريعة ومباشرة إلى مواقع العمل داخل صنعاء وضواحيها
+                بأسطول حديث من الخلاطات.
+              </p>
+              <div class="flex items-center text-green-600 font-medium">
+                <span>توصيل فوري</span>
+                <svg
+                  class="w-4 h-4 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- Service 4 -->
+            <div
+              class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">الدعم الفني</h3>
+              <p class="text-gray-600 mb-4">
+                استشارات فنية متخصصة لمساعدتكم في اختيار أنسب أنواع الخرسانة
+                لمشروعكم.
+              </p>
+              <div class="flex items-center text-purple-600 font-medium">
+                <span>خبراء متخصصون</span>
+                <svg
+                  class="w-4 h-4 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Us Section -->
+      <section
+        id="why-us"
+        class="py-20 bg-slate-900 text-white relative overflow-hidden"
+      >
+        <div class="absolute inset-0 concrete-pattern opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+          <div class="text-center mb-16">
+            <span
+              class="inline-block bg-amber-500/20 text-amber-400 px-4 py-2 rounded-full text-sm font-medium mb-4"
+              >مميزاتنا</span
+            >
+            <h2 class="text-3xl lg:text-4xl font-bold">
+              لماذا تختار الأولى للخرسانة؟
+            </h2>
+            <div class="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded"></div>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div
+              class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 hover:border-amber-500/50 transition-all"
+            >
+              <div
+                class="value-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-3">جودة مضمونة</h3>
+              <p class="text-gray-400">
+                خرسانة مطابقة للمواصفات الفنية العالمية مع شهادات جودة معتمدة
+                لكل دفعة.
+              </p>
+            </div>
+            <!-- Feature 2 -->
+            <div
+              class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 hover:border-amber-500/50 transition-all"
+            >
+              <div
+                class="value-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-3">معدات حديثة</h3>
+              <p class="text-gray-400">
+                أسطول متطور من الخلاطات والمعدات الحديثة لضمان جودة الخلط
+                والتوريد.
+              </p>
+            </div>
+            <!-- Feature 3 -->
+            <div
+              class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 hover:border-amber-500/50 transition-all"
+            >
+              <div
+                class="value-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-3">فريق محترف</h3>
+              <p class="text-gray-400">
+                فريق عمل ذو خبرة عالية في مجال الخرسانة الجاهزة ومواد البناء.
+              </p>
+            </div>
+            <!-- Feature 4 -->
+            <div
+              class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 hover:border-amber-500/50 transition-all"
+            >
+              <div
+                class="value-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-3">التزام بالمواعيد</h3>
+              <p class="text-gray-400">
+                نحرص على الالتزام الصارم بمواعيد التسليم لضمان سير مشروعكم
+                بسلاسة.
+              </p>
+            </div>
+            <!-- Feature 5 -->
+            <div
+              class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 hover:border-amber-500/50 transition-all"
+            >
+              <div
+                class="value-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-3">أسعار تنافسية</h3>
+              <p class="text-gray-400">
+                نقدم أفضل الأسعار في السوق مع الحفاظ على أعلى معايير الجودة.
+              </p>
+            </div>
+            <!-- Feature 6 -->
+            <div
+              class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 hover:border-amber-500/50 transition-all"
+            >
+              <div
+                class="value-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-3">ثقة العملاء</h3>
+              <p class="text-gray-400">
+                أكثر من 200 عميل راضٍ و500 مشروع منجز يشهدون على جودة خدماتنا.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <span
+              class="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-4"
+              >أعمالنا</span
+            >
+            <h2
+              class="section-title text-3xl lg:text-4xl font-bold text-slate-800"
+            >
+              مشاريعنا
+            </h2>
+            <p class="text-gray-600 mt-6 max-w-2xl mx-auto">
+              نفخر بمساهمتنا في العديد من المشاريع السكنية والتجارية في صنعاء
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <div
+              class="project-card rounded-2xl overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&amp;h=300&amp;fit=crop"
+                alt="مشروع تجاري - خرسانة جاهزة"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #1e293b 0%, #334155 100%)'; this.style.height='256px'; this.alt='مشروع تجاري';"
+              />
+              <div
+                class="project-card-content absolute bottom-0 left-0 right-0 p-6 text-white"
+              >
+                <span
+                  class="inline-block bg-amber-500 text-xs px-3 py-1 rounded-full mb-2"
+                  >مباني تجارية</span
+                >
+                <h3 class="text-xl font-bold">مجمع تجاري - صنعاء</h3>
+                <p class="text-gray-300 text-sm mt-2">
+                  توريد 2000 متر مكعب خرسانة جاهزة
+                </p>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div
+              class="project-card rounded-2xl overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&amp;h=300&amp;fit=crop"
+                alt="مشروع سكني - خرسانة جاهزة"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #1e293b 0%, #334155 100%)'; this.style.height='256px'; this.alt='مشروع سكني';"
+              />
+              <div
+                class="project-card-content absolute bottom-0 left-0 right-0 p-6 text-white"
+              >
+                <span
+                  class="inline-block bg-blue-500 text-xs px-3 py-1 rounded-full mb-2"
+                  >مشاريع سكنية</span
+                >
+                <h3 class="text-xl font-bold">مجمع سكني حديث</h3>
+                <p class="text-gray-300 text-sm mt-2">
+                  توريد خرسانة وبلك لـ 50 وحدة سكنية
+                </p>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div
+              class="project-card rounded-2xl overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1590418606746-018840f9cd0f?w=400&amp;h=300&amp;fit=crop"
+                alt="أعمال أساسات - خرسانة جاهزة"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #1e293b 0%, #334155 100%)'; this.style.height='256px'; this.alt='أعمال أساسات';"
+              />
+              <div
+                class="project-card-content absolute bottom-0 left-0 right-0 p-6 text-white"
+              >
+                <span
+                  class="inline-block bg-green-500 text-xs px-3 py-1 rounded-full mb-2"
+                  >أساسات</span
+                >
+                <h3 class="text-xl font-bold">أعمال أساسات ضخمة</h3>
+                <p class="text-gray-300 text-sm mt-2">
+                  صب أساسات لمبنى متعدد الطوابق
+                </p>
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <div
+              class="project-card rounded-2xl overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&amp;h=300&amp;fit=crop"
+                alt="فيلا سكنية - خرسانة جاهزة"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #1e293b 0%, #334155 100%)'; this.style.height='256px'; this.alt='فيلا سكنية';"
+              />
+              <div
+                class="project-card-content absolute bottom-0 left-0 right-0 p-6 text-white"
+              >
+                <span
+                  class="inline-block bg-purple-500 text-xs px-3 py-1 rounded-full mb-2"
+                  >فلل</span
+                >
+                <h3 class="text-xl font-bold">فيلا سكنية فاخرة</h3>
+                <p class="text-gray-300 text-sm mt-2">
+                  توريد مواد بناء متكاملة
+                </p>
+              </div>
+            </div>
+            <!-- Project 5 -->
+            <div
+              class="project-card rounded-2xl overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&amp;h=300&amp;fit=crop"
+                alt="مستودعات - خرسانة جاهزة"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #1e293b 0%, #334155 100%)'; this.style.height='256px'; this.alt='مستودعات';"
+              />
+              <div
+                class="project-card-content absolute bottom-0 left-0 right-0 p-6 text-white"
+              >
+                <span
+                  class="inline-block bg-red-500 text-xs px-3 py-1 rounded-full mb-2"
+                  >مستودعات</span
+                >
+                <h3 class="text-xl font-bold">مستودعات صناعية</h3>
+                <p class="text-gray-300 text-sm mt-2">
+                  أرضيات خرسانية عالية التحمل
+                </p>
+              </div>
+            </div>
+            <!-- Project 6 -->
+            <div
+              class="project-card rounded-2xl overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=400&amp;h=300&amp;fit=crop"
+                alt="مدرسة - خرسانة جاهزة"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #1e293b 0%, #334155 100%)'; this.style.height='256px'; this.alt='مدرسة';"
+              />
+              <div
+                class="project-card-content absolute bottom-0 left-0 right-0 p-6 text-white"
+              >
+                <span
+                  class="inline-block bg-teal-500 text-xs px-3 py-1 rounded-full mb-2"
+                  >تعليمي</span
+                >
+                <h3 class="text-xl font-bold">مجمع تعليمي</h3>
+                <p class="text-gray-300 text-sm mt-2">
+                  بناء مدرسة حديثة بمواصفات عالية
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Location Section -->
+      <section id="location" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <span
+              class="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-4"
+              >موقعنا</span
+            >
+            <h2
+              class="section-title text-3xl lg:text-4xl font-bold text-slate-800"
+            >
+              موقع الأولى للخرسانة الجاهزة
+            </h2>
+          </div>
+          <div class="grid lg:grid-cols-2 gap-8 items-center">
+            <div class="bg-gray-50 rounded-2xl p-8">
+              <div class="flex items-start gap-4 mb-6">
+                <div
+                  class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="w-6 h-6 text-amber-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">العنوان</h3>
+                  <p id="locationAddressDisplay" class="text-gray-600 text-lg">
+                    شارع الستين – صنعاء – اليمن
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 mb-6">
+                <div
+                  class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="w-6 h-6 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">الهاتف</h3>
+                  <a
+                    href="tel:+967777111176"
+                    id="locationPhoneDisplay"
+                    class="text-gray-600 text-lg hover:text-amber-600 transition-colors"
+                    >777111176</a
+                  >
+                </div>
+              </div>
+              <a
+                href="https://maps.app.goo.gl/ewfmEWzUms7o2gW39"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary inline-flex items-center gap-2 text-white px-6 py-3 rounded-xl font-medium"
+              >
                 <svg
                   class="w-5 h-5"
                   fill="none"
@@ -1016,200 +1299,514 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M15 19l-7-7 7-7"
-                  />
-                </svg>
-              </button>
-            </form>
-
-            <div
-              id="form-success"
-              class="hidden mt-6 p-4 bg-green-500/10 border border-green-500/30 rounded-xl text-center fade-in"
-            >
-              <svg
-                class="w-12 h-12 text-green-500 mx-auto mb-3"
-                fill="none"
-                stroke="currentColor"
-                viewbox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <p class="text-green-400 font-bold">تم إرسال طلب الحجز بنجاح!</p>
-              <p class="text-gray-400 text-sm mt-1">
-                سنتواصل معك قريباً لتأكيد الحجز.
-              </p>
+                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                  /></svg
+                ><span>افتح في خرائط جوجل</span>
+              </a>
+            </div>
+            <!-- Map Embed -->
+            <div class="rounded-2xl overflow-hidden shadow-xl h-96">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15386.043909003287!2d44.1814727!3d15.4029485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603d94f589a4c1b%3A0x23a8b38d5268a6c6!2z2KfZhNin2YjZhNmJINmE2YTYrtix2LPYp9mG2Kkg2KfZhNis2KfZh9iy2Kkg2YjYp9mE2KjZhNmDINin2YTYo9mI2KrZiNmF2KfYqtmK2YPZig!5e0!3m2!1sar!2s!4v1769281640216!5m2!1sar!2s"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="موقع الأولى للخرسانة الجاهزة على الخريطة"
+              ></iframe>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <footer class="bg-[#0f0f1a] border-t border-[#D4AF37]/20 py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-4 gap-8 mb-12">
-          <div class="md:col-span-2">
-            <div class="flex items-center gap-3 mb-4">
-              <div
-                class="w-12 h-12 gradient-gold rounded-full flex items-center justify-center"
-              >
-                <svg
-                  class="w-7 h-7 text-[#1a1a2e]"
-                  fill="currentColor"
-                  viewbox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l6.9 3.45L12 11.09 5.1 7.63 12 4.18zM4 8.82l7 3.5v7.36l-7-3.5V8.82zm9 10.86v-7.36l7-3.5v7.36l-7 3.5z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-xl font-bold text-gradient">فندق هلتون إب</h3>
-                <p class="text-xs text-gray-500">HILTON IBB HOTEL</p>
-              </div>
-            </div>
-            <p class="text-gray-400 leading-relaxed">
-              وجهتك المثالية للإقامة الفاخرة في قلب مدينة إب الخضراء. نقدم لكم
-              تجربة ضيافة يمنية أصيلة بمعايير عالمية.
+      </section>
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="py-20 bg-slate-900 text-white relative overflow-hidden"
+      >
+        <div class="absolute inset-0 concrete-pattern opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+          <div class="text-center mb-16">
+            <span
+              class="inline-block bg-amber-500/20 text-amber-400 px-4 py-2 rounded-full text-sm font-medium mb-4"
+              >تواصل معنا</span
+            >
+            <h2 class="text-3xl lg:text-4xl font-bold">نحن هنا لخدمتك</h2>
+            <div class="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded"></div>
+            <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
+              تواصل معنا للحصول على عرض سعر أو لأي استفسار. فريقنا جاهز
+              لمساعدتك.
             </p>
           </div>
-          <div>
-            <h4 class="text-[#D4AF37] font-bold mb-4">روابط سريعة</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="#home"
-                  class="text-gray-400 hover:text-[#D4AF37] transition-colors"
-                  >الرئيسية</a
+          <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="bg-white rounded-2xl p-8 text-gray-800">
+              <h3 class="text-2xl font-bold mb-6">أرسل رسالتك</h3>
+              <form id="contactForm" class="space-y-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >الاسم الكامل</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 transition-all outline-none"
+                    placeholder="أدخل اسمك الكامل"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >رقم الهاتف</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 transition-all outline-none"
+                    placeholder="أدخل رقم هاتفك"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >الرسالة</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 transition-all outline-none resize-none"
+                    placeholder="اكتب رسالتك هنا..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn-primary w-full text-white py-4 rounded-xl font-bold text-lg shadow-lg flex items-center justify-center gap-2"
                 >
-              </li>
-              <li>
-                <a
-                  href="#rooms"
-                  class="text-gray-400 hover:text-[#D4AF37] transition-colors"
-                  >الغرف</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#services"
-                  class="text-gray-400 hover:text-[#D4AF37] transition-colors"
-                  >الخدمات</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="text-gray-400 hover:text-[#D4AF37] transition-colors"
-                  >تواصل معنا</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-[#D4AF37] font-bold mb-4">تواصل معنا</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li>📍 شارع الثلاثين - إب</li>
-              <li>📞 770223322 967+</li>
-              <li>📞 044-454575</li>
-            </ul>
+                  <span>إرسال الرسالة</span>
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </button>
+              </form>
+              <div id="formMessage" class="mt-4 text-center hidden"></div>
+            </div>
+            <!-- Contact Info -->
+            <div class="space-y-6">
+              <!-- Phone Card -->
+              <a
+                href="tel:+967777111176"
+                class="block bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:border-amber-500/50 transition-all group"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-14 h-14 bg-amber-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+                  >
+                    <svg
+                      class="w-7 h-7 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-white">اتصل بنا</h4>
+                    <p
+                      id="contactPhoneDisplay"
+                      class="text-amber-400 text-xl font-bold"
+                    >
+                      777111176 967+
+                    </p>
+                  </div>
+                </div></a
+              >
+              <!-- WhatsApp Card -->
+              <a
+                href="https://wa.me/967777111176"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:border-green-500/50 transition-all group"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-14 h-14 bg-green-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+                  >
+                    <svg
+                      class="w-7 h-7 text-white"
+                      fill="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-white">واتساب</h4>
+                    <p class="text-green-400 font-medium">تواصل عبر واتساب</p>
+                  </div>
+                </div></a
+              >
+              <!-- Location Card -->
+              <div
+                class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-14 h-14 bg-blue-500 rounded-xl flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-7 h-7 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-white">العنوان</h4>
+                    <p id="contactAddressDisplay" class="text-gray-300">
+                      شارع الستين – صنعاء – اليمن
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="border-t border-[#D4AF37]/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
-        >
-          <p class="text-gray-500 text-sm">
-            © 2024 فندق هلتون إب السياحي. جميع الحقوق محفوظة.
-          </p>
-          <div class="flex items-center gap-4"></div>
+      </section>
+      <!-- Footer -->
+      <footer class="bg-slate-950 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <!-- Company Info -->
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    viewbox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l6.9 3.45L12 11.09 5.1 7.63 12 4.18zM4 8.82l7 3.5v7.36l-7-3.5V8.82zm9 10.86V12.32l7-3.5v7.36l-7 3.5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold">الأولى للخرسانة</h3>
+                  <p class="text-xs text-gray-400">والبلك الأوتوماتيكي</p>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                شريككم الموثوق في توريد الخرسانة الجاهزة والبلك الأوتوماتيكي في
+                صنعاء. جودة عالية والتزام بالمواعيد.
+              </p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+              <h4 class="font-bold mb-4 text-lg">روابط سريعة</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#home"
+                    class="text-gray-400 hover:text-amber-400 transition-colors"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="text-gray-400 hover:text-amber-400 transition-colors"
+                    >من نحن</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="text-gray-400 hover:text-amber-400 transition-colors"
+                    >خدماتنا</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#projects"
+                    class="text-gray-400 hover:text-amber-400 transition-colors"
+                    >مشاريعنا</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-gray-400 hover:text-amber-400 transition-colors"
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Services -->
+            <div>
+              <h4 class="font-bold mb-4 text-lg">خدماتنا</h4>
+              <ul class="space-y-2">
+                <li class="text-gray-400">الخرسانة الجاهزة</li>
+                <li class="text-gray-400">البلك الأوتوماتيكي</li>
+                <li class="text-gray-400">التوصيل والنقل</li>
+                <li class="text-gray-400">الدعم الفني</li>
+              </ul>
+            </div>
+            <!-- Contact -->
+            <div>
+              <h4 class="font-bold mb-4 text-lg">تواصل معنا</h4>
+              <ul class="space-y-3">
+                <li class="flex items-center gap-2 text-gray-400">
+                  <svg
+                    class="w-4 h-4 text-amber-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    /></svg
+                  ><span id="footerPhoneDisplay">777111176 967+</span>
+                </li>
+                <li class="flex items-center gap-2 text-gray-400">
+                  <svg
+                    class="w-4 h-4 text-amber-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    /></svg
+                  ><span id="footerAddressDisplay">شارع الستين – صنعاء</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="border-t border-gray-800 pt-8 text-center">
+            <p class="text-gray-500 text-sm">
+              © <span id="currentYear"></span> الأولى للخرسانة الجاهزة والبلك
+              الأوتوماتيكي. جميع الحقوق محفوظة.
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
-
+      </footer>
+      <!-- WhatsApp Float Button -->
+      <a
+        href="https://wa.me/967777111176"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp-float w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-colors"
+      >
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+          /></svg
+      ></a>
+    </div>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Mobile menu logic - Fixed
-        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
+      // Default config
+      const defaultConfig = {
+        company_phone: "+967 777 111 176",
+        company_address: "شارع الستين – صنعاء – اليمن",
+      };
 
-        if (mobileMenuBtn && mobileMenu) {
-          mobileMenuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-          });
+      // Initialize SDK
+      if (window.elementSdk) {
+        window.elementSdk.init({
+          defaultConfig: defaultConfig,
+          onConfigChange: async (config) => {
+            const phone = config.company_phone || defaultConfig.company_phone;
+            const address =
+              config.company_address || defaultConfig.company_address;
 
-          mobileMenu.querySelectorAll("a").forEach((link) => {
-            link.addEventListener("click", () => {
-              mobileMenu.classList.add("hidden");
-            });
-          });
-        }
+            // Update all phone displays
+            document.getElementById("topPhoneDisplay").textContent = phone;
+            document.getElementById("locationPhoneDisplay").textContent = phone;
+            document.getElementById("contactPhoneDisplay").textContent = phone;
+            document.getElementById("footerPhoneDisplay").textContent = phone;
 
-        // Navbar scroll effect
-        const nav = document.getElementById("navbar");
-        window.addEventListener("scroll", () => {
-          if (window.scrollY > 50) {
-            nav.classList.add("shadow-lg");
-            nav.classList.add("bg-[#1a1a2e]/95");
-          } else {
-            nav.classList.remove("shadow-lg");
-            nav.classList.remove("bg-[#1a1a2e]/95");
-            nav.classList.add("bg-[#1a1a2e]/80");
-          }
+            // Update all address displays
+            document.getElementById("topAddressDisplay").textContent = address;
+            document.getElementById("locationAddressDisplay").textContent =
+              address;
+            document.getElementById("contactAddressDisplay").textContent =
+              address;
+            document.getElementById("footerAddressDisplay").textContent =
+              address.split("–")[0] + "– صنعاء";
+          },
+          mapToCapabilities: (config) => ({
+            recolorables: [],
+            borderables: [],
+            fontEditable: undefined,
+            fontSizeable: undefined,
+          }),
+          mapToEditPanelValues: (config) =>
+            new Map([
+              [
+                "company_phone",
+                config.company_phone || defaultConfig.company_phone,
+              ],
+              [
+                "company_address",
+                config.company_address || defaultConfig.company_address,
+              ],
+            ]),
         });
+      }
 
-        // Date inputs setup
-        const today = new Date().toISOString().split("T")[0];
-        const checkinInput = document.getElementById("checkin");
-        const checkoutInput = document.getElementById("checkout");
+      // Mobile menu functionality
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMobileMenu = document.getElementById("closeMobileMenu");
 
-        if (checkinInput && checkoutInput) {
-          checkinInput.setAttribute("min", today);
-          checkinInput.addEventListener("change", function () {
-            checkoutInput.setAttribute("min", this.value);
-          });
-        }
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
       });
 
-      // Room Selection Helper
-      function selectRoom(type) {
-        document.getElementById("room-type").value = type;
-        document
-          .getElementById("booking-form")
-          .scrollIntoView({ behavior: "smooth" });
-      }
+      closeMobileMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+      });
 
-      // Booking Form Submission
-      const bookingForm = document.getElementById("booking-form");
-      const formSuccess = document.getElementById("form-success");
-
-      if (bookingForm) {
-        bookingForm.addEventListener("submit", (e) => {
-          e.preventDefault();
-          // Simulate API call
-          const btn = bookingForm.querySelector("button");
-          const originalText = btn.innerHTML;
-          btn.innerHTML = "جارِ الإرسال...";
-          btn.disabled = true;
-
-          setTimeout(() => {
-            bookingForm.style.display = "none";
-            formSuccess.classList.remove("hidden");
-            btn.innerHTML = originalText;
-            btn.disabled = false;
-
-            // Reset form after 5 seconds
-            setTimeout(() => {
-              bookingForm.reset();
-              bookingForm.style.display = "block";
-              formSuccess.classList.add("hidden");
-            }, 5000);
-          }, 1500);
+      // Close mobile menu when clicking on links
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
         });
-      }
+      });
+
+      // Contact form handling
+      const contactForm = document.getElementById("contactForm");
+      const formMessage = document.getElementById("formMessage");
+
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+
+        // Simulate form submission
+        formMessage.classList.remove("hidden");
+        formMessage.innerHTML =
+          '<div class="bg-green-100 text-green-700 px-4 py-3 rounded-lg">✓ تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.</div>';
+
+        // Reset form
+        contactForm.reset();
+
+        // Hide message after 5 seconds
+        setTimeout(() => {
+          formMessage.classList.add("hidden");
+        }, 5000);
+      });
+
+      // Set current year
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'9c30dd760768d1f0',t:'MTc2OTI3MTY5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
     </script>
   </body>
 </html>
